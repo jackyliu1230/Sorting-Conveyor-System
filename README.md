@@ -31,6 +31,7 @@ Testing and Calibration Procedure
 In order to make the testing and calibration procedure efficient, we separate a few parts to test on different days.
 
 1 st milestone:
+
 ● Make sure the hall effect sensor works properly to initialize the stepper motor
 
 ● Make sure the PWM is working to adjust the speed of the DC motor
@@ -42,15 +43,23 @@ In order to make the testing and calibration procedure efficient, we separate a 
 ● All the interrupts are configured in the correct way
 
 2 nd milestone:
+
 ● Make an array to store the reading of materials
+
 ● Make sure the pause-resume button is implemented
+
 ● Make sure the sensors can communicate and cooperate
 
 3rd milestone:
+
 ● The synchronization of the whole project
+
 ● Ramp down implemented
+
 ● System can sort materials correctly
+
 ● Optimize the system (improve the speed and the accuracy of the sorting system)
+
 
 The benefit of separating different tasks in the project is to minimize errors and fix errors more efficiently. For example, before making the array to store the reading of materials in the 2nd milestone, we have to make sure the ADC is working, so that it can read and reset the minimum value every time, so that when the other material has a higher value than the previous materials, the reading will not be lost. And to decide the range of materials to read, we have to make sure the LCD is displaying the materials read by the IR sensor.
 To ensure the subsections of the system are accurate, there are two main debugging techniques: using LEDs and LCDs. For example, when we want to test if the EX sensor
