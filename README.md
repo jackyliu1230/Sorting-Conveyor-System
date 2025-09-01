@@ -20,10 +20,15 @@ Based on our experiment, when we set the duty cycle to 125/255, the classificati
 Secondly, ADC reflectiveness parameters, which are the main part of identifying the materials. When the material passes through the OR sensor it triggers the IR sensor, which connects to ADC, and the IR sensor will read through the object's surface area. However, the largest value in the data obtained from different materials might be the same, so we just want to store the minimum reads from the object by resetting the minimum value in the ADC.
 
 The range of the material is listed below:
+
 Aluminum: Aluminum <= 300
+
 Steel: 400 <= Steel <= 800
+
 White Plastic: 830 <= White <= 963
+
 Black Plastic: 964 <= Black <= 1000
+
 
 The last important parameter is the acceleration, which determines the speed of the sorting system. In our project, we use an array to adjust the delay function in each rotation step. And we are using a two-phase stepper motor to increase the rotation speed. For example, when we want the stepper to turn 90 degrees, which means it needs to turn 50 steps because each step rotates 1.8 degrees. To make the stepper accelerate, we decrease the delay time for each step, but we found that the delay time cannot be very small. Otherwise, the motor will not work.
 
