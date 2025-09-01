@@ -32,9 +32,13 @@ In order to make the testing and calibration procedure efficient, we separate a 
 
 1 st milestone:
 ● Make sure the hall effect sensor works properly to initialize the stepper motor
+
 ● Make sure the PWM is working to adjust the speed of the DC motor
+
 ● Make sure the ADC setting is correct and able to read all the materials
+
 ● Make sure the LCD can display the data we want from the code
+
 ● All the interrupts are configured in the correct way
 
 2 nd milestone:
